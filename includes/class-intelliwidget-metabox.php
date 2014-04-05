@@ -295,6 +295,13 @@ class IntelliWidgetMetaBox {
         <?php echo $obj->get_label('skip_expired'); ?>
       </label>
     </p>
+    <p>
+      <label title="<?php echo $obj->get_tip('include_private'); ?>" for="<?php echo 'intelliwidget_' . $id . '_' . $box_id . '_include_private'; ?>">
+        <input id="<?php echo 'intelliwidget_' . $id . '_' . $box_id . '_include_private'; ?>" name="<?php echo 'intelliwidget_' . $box_id . '_include_private'; ?>" type="checkbox" <?php checked($instance['include_private'], 1); ?> value="1" />
+        &nbsp;
+        <?php echo $obj->get_label('include_private'); ?>
+      </label>
+    </p>    
   </div>
 </div>
 <?php
